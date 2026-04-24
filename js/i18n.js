@@ -17,7 +17,7 @@ const TRANSLATIONS = {
     'problem-p':        'Every session strips the natural oils from your skin. The cracks, the splits, the raw tips. They cost you holds, sessions, and progress. Most "fixes" are band-aids.',
     'solution-eyebrow': 'The Solution',
     'solution-h2':      'Repair that actually works.',
-    'solution-p':       'FlitzGrip replaces what your skin loses. Eight organic ingredients. No fillers, no added fragrance, no shortcuts. Apply after training. Wake up ready.',
+    'solution-p':       'FlitzGrip replaces what your skin loses. Eight organic ingredients. No fillers, no synthetic fragrance, no shortcuts. Apply after training. Wake up ready.',
 
     'product-eyebrow':  'Skin Repair Bar',
     'product-name':     'FlitzGrip<sup class="tm">™</sup>',
@@ -39,7 +39,7 @@ const TRANSLATIONS = {
     'feat-1-name':      'Eco-Friendly Housing',
     'feat-1-desc':      '3D printed from plant-based PLA. Industrially biodegradable container.',
     'feat-2-name':      'Pure & Simple',
-    'feat-2-desc':      'No aromas or synthetic scents. Ideal for sensitive skin.',
+    'feat-2-desc':      'Natural resinous scent. No synthetic additives.',
     'feat-3-name':      '100% Natural',
     'feat-3-desc':      'Crafted entirely from certified organic, bio ingredients.',
     'feat-4-name':      'Climb-Ready Hydration',
@@ -53,7 +53,7 @@ const TRANSLATIONS = {
 
     'ing-eyebrow':      "What's Inside",
     'ing-h2':           'Eight ingredients.<br>Zero fillers.',
-    'ing-intro':        'Every ingredient earns its place. No added fragrance, no water, no parabens. Just the things your skin actually needs to repair itself.',
+    'ing-intro':        'Every ingredient earns its place. No synthetic fragrance, no water, no parabens. Just the things your skin actually needs to repair itself.',
     'ing-01-p':         'Forms a protective seal over cracks and fissures. Locks in moisture without blocking pores.',
     'ing-02-p':         "Chemically closest to your skin's own sebum. Replenishes what chalk and friction strip away.",
     'ing-03-p':         'Deep nourishment for dry, damaged skin. Softens calluses and helps restore skin condition.',
@@ -133,7 +133,7 @@ const TRANSLATIONS = {
     'problem-p':        'Jede Session entzieht der Haut ihre natürlichen Öle. Die Risse, die Splits, die rohen Kuppen. Sie kosten Griffe, Sessions und Fortschritt. Die meisten Mittel sind Pflaster.',
     'solution-eyebrow': 'Die Lösung',
     'solution-h2':      'Pflege, die wirklich wirkt.',
-    'solution-p':       'FlitzGrip gibt der Haut zurück, was sie verliert. Acht Bio-Inhaltsstoffe. Keine Füllstoffe, kein zugesetzter Duft, keine Abkürzungen. Nach dem Training auftragen. Erholt aufwachen.',
+    'solution-p':       'FlitzGrip gibt der Haut zurück, was sie verliert. Acht Bio-Inhaltsstoffe. Keine Füllstoffe, kein synthetischer Duft, keine Abkürzungen. Nach dem Training auftragen. Erholt aufwachen.',
 
     'product-eyebrow':  'Hautpflege-Riegel',
     'product-name':     'FlitzGrip<sup class="tm">™</sup>',
@@ -155,7 +155,7 @@ const TRANSLATIONS = {
     'feat-1-name':      'Umweltfreundliches Gehäuse',
     'feat-1-desc':      '3D-gedruckt aus pflanzlichem PLA. Industriell kompostierbarer Behälter.',
     'feat-2-name':      'Pur & Einfach',
-    'feat-2-desc':      'Ohne Aromen oder synthetische Duftstoffe. Ideal für empfindliche Haut.',
+    'feat-2-desc':      'Natur-Harziger Duft. Keine synthetischen Zusätze.',
     'feat-3-name':      '100% Natürlich',
     'feat-3-desc':      'Ausschließlich aus zertifizierten Bio-Inhaltsstoffen.',
     'feat-4-name':      'Klettergerechte Pflege',
@@ -169,7 +169,7 @@ const TRANSLATIONS = {
 
     'ing-eyebrow':      'Was drin ist',
     'ing-h2':           'Acht Inhaltsstoffe.<br>Null Füllstoffe.',
-    'ing-intro':        'Jeder Inhaltsstoff rechtfertigt seinen Platz. Kein zugesetzter Duft, kein Wasser, keine Parabene. Nur was die Haut wirklich braucht.',
+    'ing-intro':        'Jeder Inhaltsstoff rechtfertigt seinen Platz. Kein synthetischer Duft, kein Wasser, keine Parabene. Nur was die Haut wirklich braucht.',
     'ing-01-p':         'Bildet eine Schutzschicht über Rissen. Schließt Feuchtigkeit ein, ohne die Poren zu verstopfen.',
     'ing-02-p':         'Chemisch dem eigenen Talg am ähnlichsten. Ersetzt, was Chalk und Reibung entziehen.',
     'ing-03-p':         'Tiefenpflege für trockene, strapazierte Haut. Weicht Schwielen auf und unterstützt die Erholung der Haut.',
