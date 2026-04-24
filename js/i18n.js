@@ -17,7 +17,7 @@ const TRANSLATIONS = {
     'problem-p':        'Every session strips the natural oils from your skin. The cracks, the splits, the raw tips. They cost you holds, sessions, and progress. Most "fixes" are band-aids.',
     'solution-eyebrow': 'The Solution',
     'solution-h2':      'Repair that actually works.',
-    'solution-p':       'FlitzGrip replaces what your skin loses. Eight organic ingredients. No fillers, no fragrance, no shortcuts. Apply after training. Wake up ready.',
+    'solution-p':       'FlitzGrip replaces what your skin loses. Eight organic ingredients. No fillers, no added fragrance, no shortcuts. Apply after training. Wake up ready.',
 
     'product-eyebrow':  'Skin Repair Bar',
     'product-name':     'FlitzGrip<sup class="tm">™</sup>',
@@ -53,10 +53,10 @@ const TRANSLATIONS = {
 
     'ing-eyebrow':      "What's Inside",
     'ing-h2':           'Eight ingredients.<br>Zero fillers.',
-    'ing-intro':        'Every ingredient earns its place. No fragrance, no water, no parabens. Just the things your skin actually needs to repair itself.',
+    'ing-intro':        'Every ingredient earns its place. No added fragrance, no water, no parabens. Just the things your skin actually needs to repair itself.',
     'ing-01-p':         'Forms a protective seal over cracks and fissures. Locks in moisture without blocking pores.',
     'ing-02-p':         "Chemically closest to your skin's own sebum. Replenishes what chalk and friction strip away.",
-    'ing-03-p':         'Deep nourishment for dry, damaged skin. Softens calluses and accelerates cell regeneration.',
+    'ing-03-p':         'Deep nourishment for dry, damaged skin. Softens calluses and helps restore skin condition.',
     'ing-04-p':         'Rich in vitamins A, D and E. Penetrates deeply to restore elasticity to overstressed skin.',
     'ing-05-p':         'Deeply moisturising and nourishing. Helps soften dry, thickened skin and supports the skin barrier.',
     'ing-06-p':         'Powerful antioxidant that fights free radicals. Reduces scarring and keeps skin supple long-term.',
@@ -88,7 +88,7 @@ const TRANSLATIONS = {
     'ath-3-h4':         'Gymnasts & CrossFitters',
     'ath-3-p':          'Bar work, rings, and chalk. Same problem, same fix. Clip it to your bag the same way.',
     'ath-4-h4':         'Rowers & Paddlers',
-    'ath-4-p':          'Hours on the water mean blistered, dry hands. FlitzGrip heals between sessions.',
+    'ath-4-p':          'Hours on the water mean blistered, dry hands. FlitzGrip restores between sessions.',
 
     'about-eyebrow':    'Our Story',
     'about-h2':         'We built this because we needed it.',
@@ -133,7 +133,7 @@ const TRANSLATIONS = {
     'problem-p':        'Jede Session entzieht der Haut ihre natürlichen Öle. Die Risse, die Splits, die rohen Kuppen. Sie kosten Griffe, Sessions und Fortschritt. Die meisten Mittel sind Pflaster.',
     'solution-eyebrow': 'Die Lösung',
     'solution-h2':      'Pflege, die wirklich wirkt.',
-    'solution-p':       'FlitzGrip gibt der Haut zurück, was sie verliert. Acht Bio-Inhaltsstoffe. Keine Füllstoffe, kein Duft, keine Abkürzungen. Nach dem Training auftragen. Erholt aufwachen.',
+    'solution-p':       'FlitzGrip gibt der Haut zurück, was sie verliert. Acht Bio-Inhaltsstoffe. Keine Füllstoffe, kein zugesetzter Duft, keine Abkürzungen. Nach dem Training auftragen. Erholt aufwachen.',
 
     'product-eyebrow':  'Hautpflege-Riegel',
     'product-name':     'FlitzGrip<sup class="tm">™</sup>',
@@ -169,10 +169,10 @@ const TRANSLATIONS = {
 
     'ing-eyebrow':      'Was drin ist',
     'ing-h2':           'Acht Inhaltsstoffe.<br>Null Füllstoffe.',
-    'ing-intro':        'Jeder Inhaltsstoff rechtfertigt seinen Platz. Kein Duft, kein Wasser, keine Parabene. Nur was die Haut wirklich zur Regeneration braucht.',
+    'ing-intro':        'Jeder Inhaltsstoff rechtfertigt seinen Platz. Kein zugesetzter Duft, kein Wasser, keine Parabene. Nur was die Haut wirklich braucht.',
     'ing-01-p':         'Bildet eine Schutzschicht über Rissen. Schließt Feuchtigkeit ein, ohne die Poren zu verstopfen.',
     'ing-02-p':         'Chemisch dem eigenen Talg am ähnlichsten. Ersetzt, was Chalk und Reibung entziehen.',
-    'ing-03-p':         'Tiefenpflege für trockene, strapazierte Haut. Weicht Schwielen auf und beschleunigt die Zellregeneration.',
+    'ing-03-p':         'Tiefenpflege für trockene, strapazierte Haut. Weicht Schwielen auf und unterstützt die Erholung der Haut.',
     'ing-04-p':         'Reich an Vitaminen A, D und E. Dringt tief ein und stellt die Elastizität überbeanspruchter Haut wieder her.',
     'ing-05-p':         'Intensiv feuchtigkeitsspendend und nährend. Hilft trockene, verdickte Haut zu pflegen und stärkt die Hautbarriere.',
     'ing-06-p':         'Starkes Antioxidans gegen freie Radikale. Reduziert Narbenbildung und hält die Haut langfristig geschmeidig.',
@@ -204,7 +204,7 @@ const TRANSLATIONS = {
     'ath-3-h4':         'Turner & CrossFitter',
     'ath-3-p':          'Barren, Ringe und Chalk. Gleiches Problem, gleiche Lösung. Einfach an die Tasche klippen.',
     'ath-4-h4':         'Ruderer & Paddler',
-    'ath-4-p':          'Stunden auf dem Wasser hinterlassen ihre Spuren. FlitzGrip heilt zwischen den Sessions.',
+    'ath-4-p':          'Stunden auf dem Wasser hinterlassen ihre Spuren. FlitzGrip regeneriert zwischen den Sessions.',
 
     'about-eyebrow':    'Unsere Geschichte',
     'about-h2':         'Gebaut, weil wir es gebraucht haben.',
