@@ -34,7 +34,6 @@ const TRANSLATIONS = {
     'reviews-heading':  'Reviews',
     'reviews-tally':    'Be the first to review',
     'reviews-empty-p':  'No reviews yet. Be the first to review FlitzGrip when we launch.',
-    'product-btn-ing':  'See Ingredients',
 
     'feat-1-name':      'Eco-Friendly Housing',
     'feat-1-desc':      '3D printed from plant-based PLA. Industrially biodegradable container.',
@@ -150,7 +149,6 @@ const TRANSLATIONS = {
     'reviews-heading':  'Bewertungen',
     'reviews-tally':    'Erste Bewertung schreiben',
     'reviews-empty-p':  'Noch keine Bewertungen. Sei der Erste, wenn wir starten.',
-    'product-btn-ing':  'Inhaltsstoffe',
 
     'feat-1-name':      'Umweltfreundliches Gehäuse',
     'feat-1-desc':      '3D-gedruckt aus pflanzlichem PLA. Industriell kompostierbarer Behälter.',
