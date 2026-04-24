@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Order Confirmed · FlitzGrip</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+<body>
+
+  <nav class="nav scrolled" id="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/images/logo.png" alt="FlitzGrip Logo">
+      <span>Flitz<em>Grip</em><sup class="tm">™</sup></span>
+    </a>
+  </nav>
+
+  <main>
+    <div class="status-page">
+      <div class="container">
+        <div class="status-card">
+          <div class="status-icon status-icon--success">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <h1>Order confirmed.</h1>
+          <p>Thank you for your order. We'll send a confirmation to your email shortly.</p>
+
+          <div class="status-order-id">
+            Order <strong id="successOrderId">—</strong>
+          </div>
+
+          <div id="successSummary" class="status-summary"></div>
+
+          <div class="status-actions">
+            <a href="index.html" class="btn btn-outline">Back to home</a>
+          </div>
+
+          <p style="color:var(--dim);font-size:0.82rem;margin-top:2rem">
+            Questions? <a href="mailto:hello@flitzgrip.de" style="color:var(--blue)">hello@flitzgrip.de</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>

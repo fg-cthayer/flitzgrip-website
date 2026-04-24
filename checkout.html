@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Checkout · FlitzGrip</title>
+  <link rel="canonical" href="https://www.flitzgrip.com/checkout">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+<body>
+
+  <nav class="nav scrolled" id="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/images/logo.png" alt="FlitzGrip Logo">
+      <span>Flitz<em>Grip</em><sup class="tm">™</sup></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#product"     data-i18n="nav-product">Product</a></li>
+      <li><a href="index.html#ingredients" data-i18n="nav-ingredients">Ingredients</a></li>
+      <li><a href="index.html#about"       data-i18n="nav-about">About</a></li>
+      <li><a href="distributor.html"       data-i18n="nav-distributors">Distributors</a></li>
+      <li><a href="buy.html" class="nav-cta" data-i18n="nav-buy">Buy Now</a></li>
+    </ul>
+    <button class="lang-toggle" id="langToggle" aria-label="Switch language">DE</button>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main>
+    <div class="checkout-page">
+      <div class="container">
+
+        <div class="buy-breadcrumb">
+          <a href="index.html">Home</a>
+          <span>›</span>
+          <a href="buy.html">Skin Repair Bar</a>
+          <span>›</span>
+          <span>Checkout</span>
+        </div>
+
+        <div class="checkout-grid">
+
+          <!-- LEFT: Form -->
+          <div class="checkout-form-col">
+            <form id="checkoutForm" novalidate>
+              <input type="hidden" id="hiddenQty" name="quantity" value="1">
+
+              <div class="checkout-section">
+                <h2 class="checkout-section-title">Contact</h2>
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+                </div>
+              </div>
+
+              <div class="checkout-section">
+                <h2 class="checkout-section-title">Shipping address</h2>
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label for="firstName">First name</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Max" required autocomplete="given-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="lastName">Last name</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Mustermann" required autocomplete="family-name">
+                  </div>
+                  <div class="form-group full">
+                    <label for="street">Street &amp; house number</label>
+                    <input type="text" id="street" name="street" placeholder="Musterstraße 42" required autocomplete="street-address">
+                  </div>
+                  <div class="form-group">
+                    <label for="postcode">Postcode</label>
+                    <input type="text" id="postcode" name="postcode" placeholder="10115" required autocomplete="postal-code">
+                  </div>
+                  <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" placeholder="Berlin" required autocomplete="address-level2">
+                  </div>
+                  <div class="form-group full">
+                    <label for="country">Country</label>
+                    <select id="country" name="country" required autocomplete="country">
+                      <option value="DE" selected>Germany</option>
+                      <option value="AT">Austria</option>
+                      <option value="CH">Switzerland</option>
+                      <option value="NL">Netherlands</option>
+                      <option value="BE">Belgium</option>
+                      <option value="FR">France</option>
+                      <option value="IT">Italy</option>
+                      <option value="ES">Spain</option>
+                      <option value="PL">Poland</option>
+                      <option value="GB">United Kingdom</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="checkout-section">
+                <h2 class="checkout-section-title">Payment</h2>
+                <p style="color:var(--dim);font-size:0.88rem;margin-bottom:1.5rem">
+                  You'll be redirected to Mollie to pay securely with PayPal or credit card.
+                  We never see or store your payment details.
+                </p>
+                <div class="checkout-payment-icons">
+                  <span class="pay-icon">PayPal</span>
+                  <span class="pay-icon">Visa</span>
+                  <span class="pay-icon">Mastercard</span>
+                </div>
+              </div>
+
+              <p id="checkoutError" class="checkout-error" style="display:none"></p>
+
+              <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                Pay with Mollie
+              </button>
+
+              <p class="form-note" style="text-align:center;margin-top:1rem">
+                By placing your order you agree to our
+                <a href="impressum.html" style="color:var(--blue)">terms</a>.
+                14-day return policy.
+              </p>
+            </form>
+          </div>
+
+          <!-- RIGHT: Order summary -->
+          <div class="checkout-summary-col">
+            <div class="summary-card">
+              <div class="summary-product">
+                <img src="assets/images/p-tag-white.png" alt="FlitzGrip Skin Repair Bar" class="summary-product-img">
+                <div class="summary-product-info">
+                  <div id="summaryQty">FlitzGrip™ Skin Repair Bar × 1</div>
+                  <div style="color:var(--dim);font-size:0.82rem;margin-top:0.25rem">18g · Handmade in Berlin</div>
+                </div>
+              </div>
+
+              <div class="summary-divider"></div>
+
+              <div class="summary-row">
+                <span>Subtotal</span>
+                <span id="summarySubtotal">€11.95</span>
+              </div>
+              <div class="summary-row">
+                <span>Shipping</span>
+                <span id="summaryShipping">€3.50</span>
+              </div>
+
+              <div class="summary-divider"></div>
+
+              <div class="summary-row summary-total">
+                <span>Total</span>
+                <span id="summaryTotal">€15.45</span>
+              </div>
+
+              <p style="color:var(--dim);font-size:0.78rem;margin-top:1rem">
+                incl. MwSt. · Ships from Berlin in 1–2 business days
+              </p>
+            </div>
+
+            <div class="summary-trust">
+              <div class="trust-item">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                100% Organic
+              </div>
+              <div class="trust-item">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Secure payment via Mollie
+              </div>
+              <div class="trust-item">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                14-day returns
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>

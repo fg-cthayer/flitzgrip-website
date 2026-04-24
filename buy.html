@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pre-order FlitzGrip Skin Repair Bar · €11.95. Natural hand care for climbers, sailors and gymnasts. Launching soon from Berlin.">
+  <title>Pre-order FlitzGrip · Skin Repair Bar</title>
+  <link rel="canonical" href="https://www.flitzgrip.com/buy">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="product">
+  <meta property="og:url"         content="https://www.flitzgrip.com/buy">
+  <meta property="og:title"       content="Buy FlitzGrip Skin Repair Bar · €11.95">
+  <meta property="og:description" content="Pre-order the FlitzGrip Skin Repair Bar. 100% organic hand care for climbers, sailors, rowers and gymnasts. Ships from Berlin.">
+  <meta property="og:image"       content="https://www.flitzgrip.com/assets/images/product-full.jpeg">
+  <meta property="og:image:width"  content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name"   content="FlitzGrip">
+  <meta property="product:price:amount"   content="11.95">
+  <meta property="product:price:currency" content="EUR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Buy FlitzGrip Skin Repair Bar · €11.95">
+  <meta name="twitter:description" content="Pre-order the FlitzGrip Skin Repair Bar. 100% organic hand care for climbers, sailors and gymnasts. Ships from Berlin.">
+  <meta name="twitter:image"       content="https://www.flitzgrip.com/assets/images/product-full.jpeg">
+
+  <!-- JSON-LD: Product -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "FlitzGrip Skin Repair Bar",
+    "description": "Natural hand care for climbers, sailors, rowers and gymnasts. 100% organic ingredients, handcrafted in Berlin.",
+    "image": "https://www.flitzgrip.com/assets/images/product-full.jpeg",
+    "brand": { "@type": "Brand", "name": "FlitzGrip" },
+    "manufacturer": { "@type": "Organization", "name": "FlitzGo LTX GmbH" },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.flitzgrip.com/buy",
+      "priceCurrency": "EUR",
+      "price": "11.95",
+      "availability": "https://schema.org/PreOrder",
+      "seller": { "@type": "Organization", "name": "FlitzGo LTX GmbH" }
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="apple-touch-icon" href="assets/images/logo.png">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav scrolled" id="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/images/logo.png" alt="FlitzGrip Logo">
+      <span>Flitz<em>Grip</em><sup class="tm">™</sup></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#product"      data-i18n="nav-product">Product</a></li>
+      <li><a href="index.html#ingredients"  data-i18n="nav-ingredients">Ingredients</a></li>
+      <li><a href="index.html#about"        data-i18n="nav-about">About</a></li>
+      <li><a href="distributor.html"        data-i18n="nav-distributors">Distributors</a></li>
+      <li><a href="buy.html" class="nav-cta" data-i18n="nav-buy">Buy Now</a></li>
+    </ul>
+    <button class="lang-toggle" id="langToggle" aria-label="Switch language">DE</button>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main>
+    <div class="buy-hero">
+      <div class="container">
+
+        <!-- Breadcrumb -->
+        <div class="buy-breadcrumb">
+          <a href="index.html">Home</a>
+          <span>›</span>
+          <span>Skin Repair Bar</span>
+        </div>
+
+        <div class="buy-grid">
+
+          <!-- Gallery — Amazon style: thumbs left, main right -->
+          <div class="buy-gallery" id="buyGallery">
+            <div class="buy-gallery-thumbs" id="galleryThumbs">
+              <img src="assets/images/p-tag-white.png"      alt="Product tag"     class="active" data-index="0" data-fit="contain">
+              <img src="assets/images/p-container-open.png" alt="Container open"  data-index="1" data-fit="contain">
+              <img src="assets/images/p-bar-white.png"      alt="Repair bar"      data-index="2" data-fit="contain">
+              <img src="assets/images/p-hands.png"          alt="In use outdoors" data-index="3">
+            </div>
+            <div class="buy-gallery-main-wrap" id="galleryMainWrap">
+              <img src="assets/images/p-tag-white.png" alt="FlitzGrip Skin Repair Bar" class="buy-gallery-main contain" id="galleryMain">
+              <button class="gallery-arrow prev" id="galleryPrev" aria-label="Previous">&#8249;</button>
+              <button class="gallery-arrow next" id="galleryNext" aria-label="Next">&#8250;</button>
+              <div class="gallery-dots" id="galleryDots"></div>
+            </div>
+          </div>
+
+          <!-- Product Info -->
+          <div class="buy-info">
+            <span class="eyebrow" style="color:var(--blue-dark)">Skin Repair Bar</span>
+            <h1 style="font-size: clamp(2rem,4vw,3rem); margin-bottom:.5rem; color:var(--bg)">FlitzGrip<sup class="tm">™</sup></h1>
+            <div class="buy-price">€11.95 <span class="buy-price-per-unit">€66.39/100g</span></div>
+            <div class="buy-price-sub">incl. MwSt. · Free shipping from 2 units · Germany only</div>
+
+            <!-- Quantity picker -->
+            <div class="qty-section">
+              <div class="qty-picker">
+                <button class="qty-btn" id="qtyMinus" aria-label="Decrease quantity" type="button">−</button>
+                <span class="qty-val" id="qtyVal">1</span>
+                <button class="qty-btn" id="qtyPlus" aria-label="Increase quantity" type="button">+</button>
+              </div>
+              <div class="qty-shipping-note" id="qtyShippingNote">+ €3.50 shipping</div>
+            </div>
+            <a href="checkout.html?qty=1" class="btn btn-primary btn-full" id="buyNowBtn">Buy Now — €15.45</a>
+
+            <!-- Trust signals -->
+            <div class="buy-trust" style="margin-top:1.75rem">
+              <div class="trust-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                100% Organic
+              </div>
+              <div class="trust-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Handmade in Berlin
+              </div>
+              <div class="trust-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                14-day returns
+              </div>
+              <div class="trust-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Free shipping — first order
+              </div>
+            </div>
+
+            <!-- Marketplaces -->
+            <div class="marketplace-section">
+              <div class="marketplace-label">Also coming to</div>
+              <div class="marketplace-buttons">
+                <div class="btn-marketplace btn-marketplace-soon" title="Coming soon on Amazon">
+                  <svg class="mp-logo" viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Amazon">
+                    <text y="18" font-family="Arial" font-weight="700" font-size="14" fill="currentColor">amazon</text>
+                  </svg>
+                  <span class="soon-badge">Coming soon</span>
+                </div>
+                <div class="btn-marketplace btn-marketplace-soon" title="Coming soon on eBay">
+                  <span style="font-family:var(--sans);font-weight:800;font-size:0.95rem;letter-spacing:-0.02em;opacity:0.4">
+                    <span>e</span><span>B</span><span>a</span><span>y</span>
+                  </span>
+                  <span class="soon-badge">Coming soon</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="buy-separator"></div>
+
+            <!-- Expandable details -->
+            <div class="buy-details">
+              <button class="detail-toggle" onclick="toggleDetail('details-desc', this)">
+                Description
+                <span class="chevron">⌄</span>
+              </button>
+              <div class="detail-panel" id="details-desc">
+                <div class="detail-panel-inner">
+                  A solid skin repair bar for hands that take a beating. FlitzGrip is made from seven organic ingredients. No water, no fragrance, no fillers. The wax base melts on contact, sealing cracks and fissures while restoring the natural oils stripped by chalk, rope, and training.
+                  <br><br>
+                  The clip-on teardrop container attaches directly to your chalk bag. 18g of bar lasts 3–4 months of regular use.
+                </div>
+              </div>
+
+              <button class="detail-toggle" onclick="toggleDetail('details-ingredients', this)">
+                Ingredients
+                <span class="chevron">⌄</span>
+              </button>
+              <div class="detail-panel" id="details-ingredients">
+                <div class="detail-panel-inner">
+                  Cera Alba, Simmondsia Chinensis Seed Oil, Butyrospermum Parkii Butter, Persea Gratissima Oil, Cocos Nucifera Oil, Tocopherol, Hypericum Perforatum Flower Extract.
+                  <br><br>
+                  All ingredients are certified organic. No synthetic additives, preservatives, or artificial fragrances.
+                </div>
+              </div>
+
+              <button class="detail-toggle" onclick="toggleDetail('details-howto', this)">
+                How to Use
+                <span class="chevron">⌄</span>
+              </button>
+              <div class="detail-panel" id="details-howto">
+                <div class="detail-panel-inner">
+                  <ul>
+                    <li>Wash and dry hands thoroughly after training</li>
+                    <li>Rub the bar directly onto damaged skin. Focus on fingertips, fissures, and callus edges</li>
+                    <li>A small amount goes a long way. No need to rinse</li>
+                    <li>Apply before sleep for best results; the wax works while you rest</li>
+                    <li>Clip the container to your chalk bag for easy access at the wall</li>
+                  </ul>
+                </div>
+              </div>
+
+              <button class="detail-toggle" onclick="toggleDetail('details-shipping', this)">
+                Shipping &amp; Returns
+                <span class="chevron">⌄</span>
+              </button>
+              <div class="detail-panel" id="details-shipping">
+                <div class="detail-panel-inner">
+                  <ul>
+                    <li>Ships from Berlin within 1–2 business days</li>
+                    <li>Standard delivery: 3–5 business days (Germany), 5–10 days (EU)</li>
+                    <li>Free shipping on orders over €30</li>
+                    <li>14-day return window. Product must be unused</li>
+                    <li>Questions? Email <a href="mailto:hello@flitzgrip.com" style="color: var(--blue)">hello@flitzgrip.com</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Reviews -->
+            <div class="reviews-section" id="reviews">
+              <div class="reviews-section-title" data-i18n="reviews-heading">Reviews</div>
+              <div class="reviews-overall">
+                <div class="reviews-big-score">—</div>
+                <div class="reviews-meta">
+                  <div class="reviews-stars-row">☆☆☆☆☆</div>
+                  <div class="reviews-tally" data-i18n="reviews-tally">No reviews yet</div>
+                </div>
+              </div>
+              <div class="reviews-empty">
+                <p data-i18n="reviews-empty-p">Be the first to review FlitzGrip when we launch.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/images/logo.png" alt="FlitzGrip">
+            <span>FlitzGrip<sup class="tm">™</sup></span>
+          </div>
+          <p>Natural skin repair for hands that work hard. Handcrafted in Berlin from 100% organic ingredients.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Product</h5>
+          <ul>
+            <li><a href="index.html#product">Skin Repair Bar</a></li>
+            <li><a href="index.html#ingredients">Ingredients</a></li>
+            <li><a href="index.html#howto">How to Use</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="distributor.html">Distributors</a></li>
+            <li><a href="mailto:hello@flitzgrip.com">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="#">Datenschutz</a></li>
+            <li><a href="#">Widerruf</a></li>
+            <li><a href="#">AGB</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 FlitzGo LTX GmbH · Am Krögel 2, 10179 Berlin</span>
+        <span>Made with chalk-dusted hands.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/checkout.js"></script>
+  <script>
+    /* ─── CAROUSEL ──────────────────────────────── */
+    const images = [
+      { src: 'assets/images/p-tag-white.png',      contain: true  },
+      { src: 'assets/images/p-container-open.png', contain: true  },
+      { src: 'assets/images/p-bar-white.png',      contain: true  },
+      { src: 'assets/images/p-hands.png',          contain: false },
+    ];
+    let current = 0;
+
+    const mainImg   = document.getElementById('galleryMain');
+    const mainWrap  = document.getElementById('galleryMainWrap');
+    const thumbs    = document.querySelectorAll('#galleryThumbs img');
+    const dotsWrap  = document.getElementById('galleryDots');
+
+    /* Build dots */
+    images.forEach((_, i) => {
+      const d = document.createElement('button');
+      d.className = 'gallery-dot' + (i === 0 ? ' active' : '');
+      d.setAttribute('aria-label', 'Image ' + (i + 1));
+      d.addEventListener('click', () => goTo(i));
+      dotsWrap.appendChild(d);
+    });
+
+    function goTo(index) {
+      current = (index + images.length) % images.length;
+      mainImg.classList.add('switching');
+      setTimeout(() => {
+        const img = images[current];
+        mainImg.src = img.src;
+        mainImg.classList.toggle('contain', img.contain);
+        mainImg.classList.remove('switching');
+      }, 200);
+      thumbs.forEach((t, i) => t.classList.toggle('active', i === current));
+      document.querySelectorAll('.gallery-dot').forEach((d, i) => d.classList.toggle('active', i === current));
+      thumbs[current]?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
+    }
+
+    thumbs.forEach((t, i) => t.addEventListener('click', () => goTo(i)));
+    document.getElementById('galleryPrev').addEventListener('click', () => goTo(current - 1));
+    document.getElementById('galleryNext').addEventListener('click', () => goTo(current + 1));
+
+    /* Keyboard navigation */
+    document.addEventListener('keydown', e => {
+      if (e.key === 'ArrowLeft')  goTo(current - 1);
+      if (e.key === 'ArrowRight') goTo(current + 1);
+    });
+
+    /* Touch / swipe */
+    let touchStartX = 0;
+    mainWrap.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+    mainWrap.addEventListener('touchend', e => {
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(dx) > 40) goTo(current + (dx < 0 ? 1 : -1));
+    });
+
+    /* Zoom on click */
+    mainWrap.addEventListener('click', () => {
+      if (mainWrap.classList.contains('zoomed')) {
+        mainImg.style.transform = '';
+        mainWrap.classList.remove('zoomed');
+      } else {
+        mainImg.style.transform = 'scale(1.6)';
+        mainWrap.classList.add('zoomed');
+      }
+    });
+
+    /* Pre-order form */
+    async function submitPreorder(e) {
+      e.preventDefault();
+      const btn   = document.getElementById('preorderBtn');
+      const email = e.target.querySelector('input[type="email"]').value;
+      btn.textContent = 'Saving…';
+      btn.disabled = true;
+
+      /* ─── CONNECT YOUR EMAIL SERVICE ────────────────────────────────
+         Options:
+         A) Formspree: POST to https://formspree.io/f/YOUR_FORM_ID
+         B) Mailchimp: use their embedded form or API
+         C) Klaviyo / any email platform with an API endpoint
+         ──────────────────────────────────────────────────────────── */
+      await new Promise(r => setTimeout(r, 800)); /* simulated — replace with real fetch */
+
+      document.getElementById('preorderForm').style.display    = 'none';
+      document.getElementById('preorderSuccess').style.display = 'flex';
+    }
+
+    /* Detail accordion */
+    function toggleDetail(panelId, btn) {
+      const panel = document.getElementById(panelId);
+      const isOpen = panel.style.maxHeight && panel.style.maxHeight !== '0px';
+      if (isOpen) {
+        panel.style.maxHeight = '0px';
+        btn.classList.remove('open');
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+        btn.classList.add('open');
+      }
+    }
+
+    /* Shopify / checkout integration — wire up when store is ready */
+  </script>
+</body>
+</html>
