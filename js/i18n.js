@@ -11,6 +11,7 @@ const TRANSLATIONS = {
     'hero-sub':         'Natural skin repair for climbers, sailors, rowers, and anyone whose hands work hard. 100% organic ingredients. Zero compromise.',
     'hero-btn-outline': 'Learn More',
 
+
     'problem-eyebrow':  'The Problem',
     'problem-h2':       'Chalk dries you out.<br>Rock tears you up.',
     'problem-p':        'Every session strips the natural oils from your skin. The cracks, the splits, the raw tips. They cost you holds, sessions, and progress. Most "fixes" are band-aids.',
