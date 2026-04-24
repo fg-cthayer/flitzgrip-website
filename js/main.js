@@ -2,9 +2,15 @@
    FLITZGRIP — main.js
    ============================================ */
 
-/* Nav: transparent → solid on scroll */
+/* Nav: transparent → solid on scroll + set global scroll offset */
 const nav = document.getElementById('nav');
-if (nav && !nav.classList.contains('scrolled')) {
+if (nav) {
+  const setScrollPadding = () => {
+    document.documentElement.style.scrollPaddingTop = nav.offsetHeight + 'px';
+  };
+  setScrollPadding();
+  window.addEventListener('resize', setScrollPadding, { passive: true });
+
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 60);
   }, { passive: true });
