@@ -4,13 +4,12 @@ const TRANSLATIONS = {
     'nav-ingredients':  'Ingredients',
     'nav-about':        'About',
     'nav-distributors': 'Distributors',
-    'nav-buy':          'Pre-order',
+    'nav-buy':          'Coming Soon',
 
     'hero-tag':         'Handcrafted · Berlin, DE',
     'hero-h1':          'Built for hands<br>that <em>earn it.</em>',
     'hero-sub':         'Natural skin repair for climbers, sailors, rowers, and anyone whose hands work hard. 100% organic ingredients. Zero compromise.',
-    'hero-btn-primary': 'Pre-order · €11.95',
-    'hero-btn-outline': 'See the Bar',
+    'hero-btn-outline': 'Learn More',
 
     'problem-eyebrow':  'The Problem',
     'problem-h2':       'Chalk dries you out.<br>Rock tears you up.',
@@ -35,7 +34,6 @@ const TRANSLATIONS = {
     'reviews-heading':  'Reviews',
     'reviews-tally':    'Be the first to review',
     'reviews-empty-p':  'No reviews yet. Be the first to review FlitzGrip when we launch.',
-    'product-btn-buy':  'Pre-order · €11.95',
     'product-btn-ing':  'See Ingredients',
 
     'feat-1-name':      'Eco-Friendly Housing',
@@ -122,13 +120,12 @@ const TRANSLATIONS = {
     'nav-ingredients':  'Inhaltsstoffe',
     'nav-about':        'Über uns',
     'nav-distributors': 'Händler',
-    'nav-buy':          'Vorbestellen',
+    'nav-buy':          'Demnächst',
 
     'hero-tag':         'Handgefertigt · Berlin, DE',
     'hero-h1':          'Für Hände,<br>die es <em>verdienen.</em>',
     'hero-sub':         'Natürliche Hautpflege für Kletterer, Segler, Ruderer und alle, die ihre Hände wirklich benutzen. 100% Bio-Inhaltsstoffe. Kein Kompromiss.',
-    'hero-btn-primary': 'Vorbestellen · €11,95',
-    'hero-btn-outline': 'Zum Produkt',
+    'hero-btn-outline': 'Mehr erfahren',
 
     'problem-eyebrow':  'Das Problem',
     'problem-h2':       'Chalk trocknet aus.<br>Fels reißt auf.',
@@ -153,7 +150,6 @@ const TRANSLATIONS = {
     'reviews-heading':  'Bewertungen',
     'reviews-tally':    'Erste Bewertung schreiben',
     'reviews-empty-p':  'Noch keine Bewertungen. Sei der Erste, wenn wir starten.',
-    'product-btn-buy':  'Vorbestellen · €11,95',
     'product-btn-ing':  'Inhaltsstoffe',
 
     'feat-1-name':      'Umweltfreundliches Gehäuse',
