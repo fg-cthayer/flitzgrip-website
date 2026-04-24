@@ -349,7 +349,7 @@ section { padding: var(--section-gap) 0; }
   background: #ffffff;
   padding: 6%;
 }
-.product-info { padding: 1rem 0; }
+.product-info { padding: 1rem 0; scroll-margin-top: 90px; }
 .product-info .eyebrow { color: var(--blue-dark); }
 .product-info .rating-label { color: rgba(12,12,12,0.4); }
 .product-info .btn-outline { color: var(--bg); border-color: rgba(12,12,12,0.25); }
