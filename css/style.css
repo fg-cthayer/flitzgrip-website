@@ -623,7 +623,7 @@ section { padding: var(--section-gap) 0; }
   border-radius: var(--r-lg);
   display: block;
 }
-.about-content h2 { margin-bottom: 1.5rem; }
+.about-content h2 { font-size: clamp(1.6rem, 2.5vw, 2.4rem); margin-bottom: 1.25rem; }
 .about-content p { color: rgba(240,239,237,0.80); margin-bottom: 1.25rem; font-size: 1rem; }
 .ig-link {
   display: inline-block;
