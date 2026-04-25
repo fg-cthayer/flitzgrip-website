@@ -21,6 +21,7 @@
   <meta name="twitter:description" content="Carry FlitzGrip in your climbing gym or outdoor shop. Wholesale inquiries welcome.">
   <meta name="twitter:image"       content="https://www.flitzgrip.com/assets/images/product-full.jpeg">
 
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" href="assets/images/logo.png">
   <link rel="apple-touch-icon" href="assets/images/logo.png">
@@ -247,6 +248,8 @@
   <script src="js/main.js"></script>
   <script src="js/i18n.js"></script>
   <script>
+    emailjs.init('c1HgJErJSBtSV3KZE');
+
     async function submitForm(e) {
       e.preventDefault();
       const form = document.getElementById('distributorForm');
@@ -272,35 +275,14 @@
         message:   form.message.value,
       };
 
-      /* ─── FORM SUBMISSION ──────────────────────────────────────────────
-         Options (replace the simulated timeout below):
-
-         A) Formspree (simplest — no backend needed):
-            1. Sign up at formspree.io
-            2. Create a form and get your endpoint ID
-            3. Change the fetch URL to: https://formspree.io/f/YOUR_FORM_ID
-
-         B) Netlify Forms:
-            1. Add  data-netlify="true"  to the <form> tag
-            2. Deploy to Netlify — it handles the rest automatically
-
-         C) Your own API endpoint:
-            1. POST to your backend URL with the data object above
-         ─────────────────────────────────────────────────────────────── */
       try {
-        /* Placeholder: replace with actual submission endpoint */
-        await new Promise(r => setTimeout(r, 1200)); /* simulated delay */
-
-        /* await fetch('https://formspree.io/f/YOUR_FORM_ID', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-          body: JSON.stringify(data)
-        }); */
+        await emailjs.send('service_x0jkn6p', 'template_98eyvpb', data);
 
         form.style.display = 'none';
         document.getElementById('successMessage').style.display = 'block';
         window.scrollTo({ top: document.getElementById('distributorForm').parentElement.offsetTop - 100, behavior: 'smooth' });
       } catch (err) {
+        console.error('EmailJS error:', err);
         btn.textContent = 'Send Inquiry';
         btn.disabled = false;
         alert('Something went wrong. Please email info@flitzgrip.com directly.');

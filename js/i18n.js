@@ -92,7 +92,7 @@ const TRANSLATIONS = {
 
     'about-eyebrow':    'Our Story',
     'about-h2':         'We built this because we needed it.',
-    'about-p1':         "We're a climbing family based in Berlin. After years of destroyed fingers, half-hearted recoveries, and products that smelled like a pharmacy. So we made something ourselves.",
+    'about-p1':         "We're a climbing family based in Berlin. Years of destroyed fingers, half-hearted recoveries, and products that smelled like a pharmacy pushed us to make something ourselves.",
     'about-p2':         'FlitzGrip started in our kitchen. The formula is small, considered, and honest. Organic ingredients from transparent supply chains. Made by hand in small batches. No marketing budget, no lab coat mystique. Just a bar that works.',
     'about-p3':         "We're selective about where we start. If you're a gym, a shop, or a distributor who cares about the same things we do, we'd like to hear from you.",
     'about-company':    'Company',
