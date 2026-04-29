@@ -21,8 +21,8 @@ const TRANSLATIONS = {
 
     'product-eyebrow':  'Skin Repair Bar',
     'product-name':     'FlitzGrip<sup class="tm">™</sup>',
-    'product-p1':       'The FlitzGrip Skin Repair Bar is a solid, water-free balm in a plant-based, 3D-printed container that clips straight to your chalk bag. Crafted from organic beeswax, Jojoba, and Shea butter, it\'s built to recover raw, chalk-stripped hands after your session.',
-    'product-p2':       'Instead of thinning your skin, the wax seals cracks to lock in your natural moisture. It melts on contact, laying down a heavy-duty, active lipid layer that deeply conditions your calluses to keep them tough but flexible before absorbing into a velvety, protective finish.',
+    'product-p1':       'A solid, water-free balm in a plant-based, 3D-printed container that clips to your chalk bag. Organic beeswax, Jojoba, and Shea butter — built to recover raw, chalk-stripped hands after your session.',
+    'inci-toggle':      'Full Ingredients (INCI)',
     'spec-weight':      'Weight',
     'spec-format':      'Format',
     'spec-format-val':  'Solid Bar',
@@ -139,8 +139,8 @@ const TRANSLATIONS = {
 
     'product-eyebrow':  'Hautpflege-Riegel',
     'product-name':     'FlitzGrip<sup class="tm">™</sup>',
-    'product-p1':       'Der FlitzGrip Skin Repair Bar ist ein fester, wasserfreier Balsam in einem pflanzenbasierten, 3D-gedruckten Behälter, der sich direkt an deine Chalkbag clippt. Aus Bio-Bienenwachs, Jojoba und Sheabutter gefertigt – entwickelt, um rohe, chalk-gestresste Hände nach der Session zu regenerieren.',
-    'product-p2':       'Statt deine Haut zu verdünnen, versiegelt das Wachs Risse und schützt deine natürliche Feuchtigkeit. Es schmilzt beim Auftragen und legt eine intensive Lipidschicht an, die deine Hornhaut tief konditioniert – strapazierfähig und flexibel zugleich – bevor es in einem samtigen, schützenden Film einzieht.',
+    'product-p1':       'Ein fester, wasserfreier Balsam in einem pflanzenbasierten, 3D-gedruckten Behälter – direkt an die Chalkbag geclippt. Bio-Bienenwachs, Jojoba und Sheabutter, entwickelt um rohe, chalk-gestresste Hände nach der Session zu regenerieren.',
+    'inci-toggle':      'Alle Inhaltsstoffe (INCI)',
     'spec-weight':      'Gewicht',
     'spec-format':      'Format',
     'spec-format-val':  'Fester Riegel',
