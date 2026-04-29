@@ -21,7 +21,8 @@ const TRANSLATIONS = {
 
     'product-eyebrow':  'Skin Repair Bar',
     'product-name':     'FlitzGrip<sup class="tm">™</sup>',
-    'product-p':        'A solid, natural skin repair bar in a clip-on teardrop container. Clip it to your chalk bag. Use it after every session. The wax formula seals fissures, restores moisture, and gets out of your way.',
+    'product-p1':       'The FlitzGrip Skin Repair Bar is a solid, water-free balm in a plant-based, 3D-printed container that clips straight to your chalk bag. Crafted from organic beeswax, Jojoba, and Shea butter, it\'s built to recover raw, chalk-stripped hands after your session.',
+    'product-p2':       'Instead of thinning your skin, the wax seals cracks to lock in your natural moisture. It melts on contact, laying down a heavy-duty, active lipid layer that deeply conditions your calluses to keep them tough but flexible before absorbing into a velvety, protective finish.',
     'spec-weight':      'Weight',
     'spec-format':      'Format',
     'spec-format-val':  'Solid Bar',
@@ -138,7 +139,8 @@ const TRANSLATIONS = {
 
     'product-eyebrow':  'Hautpflege-Riegel',
     'product-name':     'FlitzGrip<sup class="tm">™</sup>',
-    'product-p':        'Ein fester, natürlicher Hautpflege-Riegel im Clip-Behälter. An die Chalkbag klippen. Nach jeder Session anwenden. Die Wachsformel versiegelt Risse, spendet Feuchtigkeit und ist schnell wieder vergessen.',
+    'product-p1':       'Der FlitzGrip Skin Repair Bar ist ein fester, wasserfreier Balsam in einem pflanzenbasierten, 3D-gedruckten Behälter, der sich direkt an deine Chalkbag clippt. Aus Bio-Bienenwachs, Jojoba und Sheabutter gefertigt – entwickelt, um rohe, chalk-gestresste Hände nach der Session zu regenerieren.',
+    'product-p2':       'Statt deine Haut zu verdünnen, versiegelt das Wachs Risse und schützt deine natürliche Feuchtigkeit. Es schmilzt beim Auftragen und legt eine intensive Lipidschicht an, die deine Hornhaut tief konditioniert – strapazierfähig und flexibel zugleich – bevor es in einem samtigen, schützenden Film einzieht.',
     'spec-weight':      'Gewicht',
     'spec-format':      'Format',
     'spec-format-val':  'Fester Riegel',
