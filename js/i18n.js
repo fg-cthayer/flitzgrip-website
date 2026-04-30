@@ -4,7 +4,7 @@ const TRANSLATIONS = {
     'nav-ingredients':  'Ingredients',
     'nav-about':        'About',
     'nav-distributors': 'Distributors',
-    'nav-buy':          'Coming Soon',
+    'nav-buy':          'Shop',
 
     'hero-tag':         'Handcrafted · Berlin, DE',
     'hero-h1':          'Built for hands<br>that <em>earn it.</em>',
@@ -134,7 +134,7 @@ const TRANSLATIONS = {
     'nav-ingredients':  'Inhaltsstoffe',
     'nav-about':        'Über uns',
     'nav-distributors': 'Händler',
-    'nav-buy':          'Demnächst',
+    'nav-buy':          'Shop',
 
     'hero-tag':         'Handgefertigt · Berlin, DE',
     'hero-h1':          'Für Hände,<br>die es <em>verdienen.</em>',

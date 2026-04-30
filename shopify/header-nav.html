@@ -1,0 +1,169 @@
+<!--
+  FlitzGrip — Shopify Header Nav
+  Paste this into: Online Store → Themes → Edit code → sections/header.liquid
+  (or add as a Custom Liquid section above the theme header)
+
+  Cart icon uses Shopify's native {{ cart.item_count }} and routes.cart_url.
+  Links back to the main site at flitzgrip.com for informational pages.
+-->
+
+<style>
+  .fg-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #0C0C0C;
+    border-bottom: 1px solid #1E1E1E;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    gap: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  .fg-nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+  .fg-nav-logo img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+  }
+  .fg-nav-logo span {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #F0EFED;
+    letter-spacing: -0.02em;
+  }
+  .fg-nav-logo em {
+    font-style: normal;
+    color: #29ABE2;
+  }
+  .fg-nav-logo sup {
+    font-size: 0.5em;
+    vertical-align: super;
+    color: rgba(240,239,237,0.5);
+    font-weight: 400;
+  }
+
+  .fg-nav-links {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+  }
+  .fg-nav-links a {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: rgba(240,239,237,0.65);
+    text-decoration: none;
+    padding: 0.35rem 0.75rem;
+    border-radius: 6px;
+    transition: color 0.18s, background 0.18s;
+    letter-spacing: 0.01em;
+  }
+  .fg-nav-links a:hover {
+    color: #F0EFED;
+    background: rgba(240,239,237,0.06);
+  }
+
+  .fg-nav-cta {
+    font-size: 0.78rem !important;
+    font-weight: 700 !important;
+    color: #F0EFED !important;
+    background: #29ABE2 !important;
+    border-radius: 6px !important;
+    padding: 0.4rem 1rem !important;
+    letter-spacing: 0.02em !important;
+    transition: background 0.18s !important;
+  }
+  .fg-nav-cta:hover {
+    background: #1A7EAA !important;
+    color: #F0EFED !important;
+  }
+
+  .fg-nav-right {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: auto;
+  }
+
+  .fg-cart {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: rgba(240,239,237,0.7);
+    text-decoration: none;
+    padding: 0.35rem 0.5rem;
+    border-radius: 6px;
+    transition: color 0.18s, background 0.18s;
+    position: relative;
+  }
+  .fg-cart:hover {
+    color: #F0EFED;
+    background: rgba(240,239,237,0.06);
+  }
+  .fg-cart svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  .fg-cart-count {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #F0EFED;
+    background: #29ABE2;
+    border-radius: 99px;
+    min-width: 18px;
+    height: 18px;
+    display: {% if cart.item_count > 0 %}flex{% else %}none{% endif %};
+    align-items: center;
+    justify-content: center;
+    padding: 0 4px;
+    line-height: 1;
+  }
+
+  @media (max-width: 700px) {
+    .fg-nav-links li:not(:last-child) { display: none; }
+    .fg-nav { padding: 0 1.25rem; gap: 1rem; }
+  }
+</style>
+
+<nav class="fg-nav">
+  <a href="https://www.flitzgrip.com" class="fg-nav-logo">
+    <img
+      src="{{ 'logo.png' | asset_url }}"
+      alt="FlitzGrip Logo"
+      width="28"
+      height="28"
+    >
+    <span>Flitz<em>Grip</em><sup>™</sup></span>
+  </a>
+
+  <ul class="fg-nav-links">
+    <li><a href="https://www.flitzgrip.com/#product">Product</a></li>
+    <li><a href="https://www.flitzgrip.com/#ingredients">Ingredients</a></li>
+    <li><a href="https://www.flitzgrip.com/#about">About</a></li>
+    <li><a href="{{ routes.root_url }}" class="fg-nav-cta">Shop</a></li>
+  </ul>
+
+  <div class="fg-nav-right">
+    <a href="{{ routes.cart_url }}" class="fg-cart" aria-label="Cart">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <path d="M16 10a4 4 0 0 1-8 0"/>
+      </svg>
+      <span class="fg-cart-count">{{ cart.item_count }}</span>
+    </a>
+  </div>
+</nav>
