@@ -21,7 +21,8 @@ const TRANSLATIONS = {
 
     'product-eyebrow':  'Skin Repair Bar',
     'product-name':     'FlitzGrip<sup class="tm">™</sup>',
-    'product-p1':       'A solid, water-free balm in a plant-based, 3D-printed container that clips to your chalk bag. Organic beeswax, Jojoba, and Shea butter — built to recover raw, chalk-stripped hands after your session.',
+    'product-p1':       'FlitzGrip Skin Repair Bar is a solid balm built to recover raw, chalk-stripped hands after your session. Shipped in a plant-based, 3D-printed container that clips straight to your chalk bag, it is designed to replenish the natural oils lost during climbing.',
+    'product-p2':       'The formula uses Jojoba as a lipid replacement, St. John\'s Wort (Johanniskraut) for active skin recovery, and Vitamin E for structural protection. Cruelty-free and tree-nut allergen-free, it melts on contact, laying down a heavy-duty lipid layer that conditions your calluses to keep them tough but flexible.',
     'inci-toggle':      'Full Ingredients (INCI)',
     'spec-weight':      'Weight',
     'spec-format':      'Format',
@@ -139,7 +140,8 @@ const TRANSLATIONS = {
 
     'product-eyebrow':  'Hautpflege-Riegel',
     'product-name':     'FlitzGrip<sup class="tm">™</sup>',
-    'product-p1':       'Ein fester, wasserfreier Balsam in einem pflanzenbasierten, 3D-gedruckten Behälter – direkt an die Chalkbag geclippt. Bio-Bienenwachs, Jojoba und Sheabutter, entwickelt um rohe, chalk-gestresste Hände nach der Session zu regenerieren.',
+    'product-p1':       'Der FlitzGrip Skin Repair Bar ist ein fester Balsam, entwickelt um rohe, chalk-gestresste Hände nach der Session zu regenerieren. Im pflanzenbasierten, 3D-gedruckten Behälter geliefert, der sich direkt an die Chalkbag clippt – konzipiert, um die beim Klettern verlorenen natürlichen Öle zu ersetzen.',
+    'product-p2':       'Die Formel verwendet Jojoba als Lipidersatz, Johanniskraut für aktive Hautregeneration und Vitamin E für strukturellen Schutz. Cruelty-free und frei von Baumnuss-Allergenen, schmilzt es beim Auftragen und legt eine intensive Lipidschicht an, die deine Hornhaut konditioniert – strapazierfähig und flexibel zugleich.',
     'inci-toggle':      'Alle Inhaltsstoffe (INCI)',
     'spec-weight':      'Gewicht',
     'spec-format':      'Format',

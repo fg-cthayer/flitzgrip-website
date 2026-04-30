@@ -424,7 +424,7 @@ section { padding: var(--section-gap) 0; }
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--blue-dark);
+  color: #1A7EAA !important;
   cursor: pointer;
   list-style: none;
   user-select: none;
