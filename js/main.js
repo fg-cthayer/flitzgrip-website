@@ -23,7 +23,6 @@ if (navToggle && navLinks) {
   const closeMenu = () => {
     navLinks.classList.remove('open');
     navToggle.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
-    document.body.style.overflow = '';
   };
 
   navToggle.addEventListener('click', () => {
@@ -33,7 +32,6 @@ if (navToggle && navLinks) {
       spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
       spans[1].style.opacity   = '0';
       spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
-      document.body.style.overflow = 'hidden';
     } else {
       closeMenu();
     }
@@ -42,6 +40,10 @@ if (navToggle && navLinks) {
   navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', closeMenu);
   });
+
+  window.addEventListener('scroll', () => {
+    if (navLinks.classList.contains('open')) closeMenu();
+  }, { passive: true });
 
 }
 
