@@ -1360,14 +1360,22 @@ a.product-rating:hover .rating-stars { opacity: 0.6; }
 @media (max-width: 900px) {
   .nav-links { display: none; }
   .nav-toggle { display: flex; }
-  .lang-toggle { margin-left: auto; }
+  /* Hide lang-toggle from nav bar — it moves into the open menu */
+  .lang-toggle { display: none; }
+  /* Keep Shop CTA visible in nav bar at all times */
+  .nav-links .nav-cta-always {
+    display: flex !important;
+    position: static !important;
+    font-size: 0.78rem;
+    padding: 0.45rem 1rem;
+  }
   .nav-links.open {
     display: flex;
     flex-direction: column;
     position: fixed;
     inset: 0;
     top: 70px;
-    background: var(--bg);
+    background: #0C0C0C;
     padding: 2rem var(--pad);
     gap: 1.5rem;
     z-index: 99;
@@ -1379,6 +1387,28 @@ a.product-rating:hover .rating-stars { opacity: 0.6; }
     letter-spacing: 0;
     text-transform: none;
   }
+  /* Hide Shop from open menu — it stays in the nav bar */
+  .nav-links.open .nav-cta { display: none; }
+  /* Language toggle item inside open menu */
+  .nav-lang-item {
+    display: none;
+    margin-top: auto;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+  }
+  .nav-links.open .nav-lang-item { display: block; }
+  .nav-lang-item button {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: rgba(240,239,237,0.5);
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: var(--r-xs);
+    padding: 0.45rem 1.1rem;
+    cursor: pointer;
+    letter-spacing: 0.08em;
+  }
 
   .problem-grid { grid-template-columns: 1fr; gap: 1rem; }
   .product-grid { grid-template-columns: 1fr; }
@@ -1386,7 +1416,7 @@ a.product-rating:hover .rating-stars { opacity: 0.6; }
   .howto-grid { grid-template-columns: 1fr; gap: 1rem; }
   .athletes-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
   .about-grid { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
   .buy-grid { grid-template-columns: 1fr; }
   .buy-gallery {
     position: static;
@@ -1409,7 +1439,8 @@ a.product-rating:hover .rating-stars { opacity: 0.6; }
 
 @media (max-width: 600px) {
   .athletes-grid { grid-template-columns: 1fr; gap: 0.75rem; }
-  .footer-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
   .hero-actions { flex-direction: column; align-items: flex-start; }
   .about-details { flex-direction: column; gap: 1.25rem; }
   .buy-gallery-thumbs { grid-template-columns: repeat(3, 1fr); }

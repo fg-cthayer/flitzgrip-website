@@ -38,6 +38,7 @@ if (navToggle && navLinks) {
       navToggle.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
     });
   });
+
 }
 
 /* Scroll reveal */
