@@ -2,65 +2,54 @@
    FLITZGRIP — main.js
    ============================================ */
 
-/* Nav: transparent → solid on scroll + set global scroll offset */
+/* Nav scroll state + expose nav height as CSS variable */
 const nav = document.getElementById('nav');
 if (nav) {
-  const setScrollPadding = () => {
-    document.documentElement.style.scrollPaddingTop = nav.offsetHeight + 'px';
+  const syncNav = () => {
+    const h = nav.offsetHeight;
+    document.documentElement.style.scrollPaddingTop = h + 'px';
+    document.documentElement.style.setProperty('--nav-h', h + 'px');
   };
-  setScrollPadding();
-  window.addEventListener('resize', setScrollPadding, { passive: true });
-
+  syncNav();
+  window.addEventListener('resize', syncNav, { passive: true });
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 60);
   }, { passive: true });
 }
 
-/* Mobile nav toggle */
+/* Mobile nav */
 const navToggle = document.getElementById('navToggle');
 const navLinks  = document.getElementById('navLinks');
 if (navToggle && navLinks) {
-  let savedScrollY = 0;
+  const html  = document.documentElement;
+  const spans = navToggle.querySelectorAll('span');
 
-  const lockScroll = () => {
-    savedScrollY = window.scrollY;
-    document.body.style.position = 'fixed';
-    document.body.style.top      = `-${savedScrollY}px`;
-    document.body.style.left     = '0';
-    document.body.style.right    = '0';
-    if (nav) nav.classList.add('scrolled');
-  };
-
-  const unlockScroll = () => {
-    document.body.style.position = '';
-    document.body.style.top      = '';
-    document.body.style.left     = '';
-    document.body.style.right    = '';
-    window.scrollTo(0, savedScrollY);
-    if (nav && savedScrollY <= 60) nav.classList.remove('scrolled');
+  const openMenu = () => {
+    navLinks.classList.add('open');
+    html.classList.add('nav-open');
+    spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+    spans[1].style.opacity   = '0';
+    spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+    navToggle.setAttribute('aria-expanded', 'true');
   };
 
   const closeMenu = () => {
     navLinks.classList.remove('open');
-    navToggle.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
-    unlockScroll();
+    html.classList.remove('nav-open');
+    spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+    navToggle.setAttribute('aria-expanded', 'false');
   };
 
   navToggle.addEventListener('click', () => {
-    const isOpen = navLinks.classList.toggle('open');
-    const spans  = navToggle.querySelectorAll('span');
-    if (isOpen) {
-      spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-      spans[1].style.opacity   = '0';
-      spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
-      lockScroll();
-    } else {
-      closeMenu();
-    }
+    navLinks.classList.contains('open') ? closeMenu() : openMenu();
   });
 
-  navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', closeMenu);
+  /* Close on any link tap */
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+
+  /* Close on Escape */
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && navLinks.classList.contains('open')) closeMenu();
   });
 }
 
