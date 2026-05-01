@@ -28,6 +28,7 @@ if (navToggle && navLinks) {
     document.body.style.top      = `-${savedScrollY}px`;
     document.body.style.left     = '0';
     document.body.style.right    = '0';
+    if (nav) nav.classList.add('scrolled');
   };
 
   const unlockScroll = () => {
@@ -36,6 +37,7 @@ if (navToggle && navLinks) {
     document.body.style.left     = '';
     document.body.style.right    = '';
     window.scrollTo(0, savedScrollY);
+    if (nav && savedScrollY <= 60) nav.classList.remove('scrolled');
   };
 
   const closeMenu = () => {
