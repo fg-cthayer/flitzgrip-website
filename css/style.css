@@ -1364,18 +1364,18 @@ a.product-rating:hover .rating-stars { opacity: 0.6; }
 .reveal-delay-3 { transition-delay: 0.3s; }
 .reveal-delay-4 { transition-delay: 0.4s; }
 
-/* --- MOBILE NAV — always solid, no JS needed for background --- */
+/* --- MOBILE NAV always solid ---
+   backdrop-filter is intentionally removed on mobile: it creates a CSS
+   stacking context that traps position:fixed children (the menu panel)
+   inside the nav's own bounds instead of covering the viewport. */
 @media (max-width: 900px) {
   .nav {
-    background: rgba(12,12,12,0.97) !important;
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    background: #0C0C0C !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
     border-bottom: 1px solid var(--border) !important;
   }
 }
-
-/* Scroll lock — toggled via html.nav-open class in JS */
-html.nav-open { overflow: hidden; }
 
 /* Menu slide-in animation */
 @keyframes menuIn {
