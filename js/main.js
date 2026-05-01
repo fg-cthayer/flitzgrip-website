@@ -20,18 +20,38 @@ if (nav) {
 const navToggle = document.getElementById('navToggle');
 const navLinks  = document.getElementById('navLinks');
 if (navToggle && navLinks) {
+  let savedScrollY = 0;
+
+  const lockScroll = () => {
+    savedScrollY = window.scrollY;
+    document.body.style.position = 'fixed';
+    document.body.style.top      = `-${savedScrollY}px`;
+    document.body.style.left     = '0';
+    document.body.style.right    = '0';
+  };
+
+  const unlockScroll = () => {
+    document.body.style.position = '';
+    document.body.style.top      = '';
+    document.body.style.left     = '';
+    document.body.style.right    = '';
+    window.scrollTo(0, savedScrollY);
+  };
+
   const closeMenu = () => {
     navLinks.classList.remove('open');
     navToggle.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+    unlockScroll();
   };
 
   navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-    const spans = navToggle.querySelectorAll('span');
-    if (navLinks.classList.contains('open')) {
+    const isOpen = navLinks.classList.toggle('open');
+    const spans  = navToggle.querySelectorAll('span');
+    if (isOpen) {
       spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
       spans[1].style.opacity   = '0';
       spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+      lockScroll();
     } else {
       closeMenu();
     }
@@ -40,11 +60,6 @@ if (navToggle && navLinks) {
   navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', closeMenu);
   });
-
-  window.addEventListener('scroll', () => {
-    if (navLinks.classList.contains('open')) closeMenu();
-  }, { passive: true });
-
 }
 
 /* Scroll reveal */

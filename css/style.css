@@ -1399,19 +1399,33 @@ a.product-rating:hover .rating-stars { opacity: 0.6; }
     border-bottom: 1px solid var(--border);
   }
   .nav-links.open li a:hover { opacity: 1; color: var(--white); }
-  /* Lang toggle sits right below the nav items */
+  /* Lang row: sits below nav items as a labelled row */
   .nav-lang-item {
     display: none;
-    padding-top: 1.5rem;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 0 0;
+    margin-top: 0.25rem;
+    border-top: 1px solid var(--border);
   }
-  .nav-links.open .nav-lang-item { display: block; }
+  .nav-links.open .nav-lang-item { display: flex; }
+  .nav-lang-label {
+    font-family: var(--sans);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(240,239,237,0.35);
+  }
   .nav-lang-item .lang-toggle {
     display: inline-flex;
-    font-size: 0.75rem;
-    padding: 0.4rem 1rem;
-    color: rgba(240,239,237,0.45);
-    border-color: var(--border);
     opacity: 1;
+    font-size: 0.7rem;
+    padding: 0.3rem 0.85rem;
+    color: rgba(240,239,237,0.55);
+    border-color: var(--border);
   }
 
   .problem-grid { grid-template-columns: 1fr; gap: 1rem; }
