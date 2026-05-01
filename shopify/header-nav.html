@@ -133,7 +133,9 @@
   /* ── Mobile ── */
   @media (max-width: 768px) {
     .fg-nav { padding: 0.75rem 1.25rem; }
-    .fg-nav-links li:not(:last-child) { display: none; }
+    /* Hide all nav links on mobile — Shop + Cart stay visible in bar */
+    .fg-nav-links { display: none; }
+    .fg-nav-cta { font-size: 0.78rem !important; padding: 0.4rem 0.9rem !important; }
   }
 </style>
 
@@ -152,8 +154,9 @@
     <li><a href="https://www.flitzgrip.com/#product">Product</a></li>
     <li><a href="https://www.flitzgrip.com/#ingredients">Ingredients</a></li>
     <li><a href="https://www.flitzgrip.com/#about">About</a></li>
-    <li><a href="{{ routes.root_url }}" class="fg-nav-cta">Shop</a></li>
   </ul>
+
+  <a href="{{ routes.root_url }}" class="fg-nav-cta">Shop</a>
 
   <a href="{{ routes.cart_url }}" class="fg-nav-cart" aria-label="Cart ({{ cart.item_count }} items)">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">

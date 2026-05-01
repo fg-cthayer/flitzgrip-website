@@ -138,6 +138,14 @@ section { padding: var(--section-gap) 0; }
   transition: background 0.2s !important;
 }
 .nav-cta:hover { background: var(--blue-dark) !important; }
+.nav-shop {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 .lang-toggle {
   font-family: var(--sans);
   font-size: 0.7rem;
@@ -1360,15 +1368,10 @@ a.product-rating:hover .rating-stars { opacity: 0.6; }
 @media (max-width: 900px) {
   .nav-links { display: none; }
   .nav-toggle { display: flex; }
-  /* Hide lang-toggle from nav bar — it moves into the open menu */
-  .lang-toggle { display: none; }
-  /* Keep Shop CTA visible in nav bar at all times */
-  .nav-links .nav-cta-always {
-    display: flex !important;
-    position: static !important;
-    font-size: 0.78rem;
-    padding: 0.45rem 1rem;
-  }
+  /* Desktop lang toggle hidden — moves into hamburger menu */
+  .lang-toggle-desktop { display: none; }
+  /* Shop stays in nav bar at all times */
+  .nav-shop { font-size: 0.78rem; padding: 0.4rem 0.9rem; }
   .nav-links.open {
     display: flex;
     flex-direction: column;
@@ -1387,9 +1390,7 @@ a.product-rating:hover .rating-stars { opacity: 0.6; }
     letter-spacing: 0;
     text-transform: none;
   }
-  /* Hide Shop from open menu — it stays in the nav bar */
-  .nav-links.open .nav-cta { display: none; }
-  /* Language toggle item inside open menu */
+  /* Lang toggle at bottom of open menu */
   .nav-lang-item {
     display: none;
     margin-top: auto;
@@ -1397,17 +1398,12 @@ a.product-rating:hover .rating-stars { opacity: 0.6; }
     border-top: 1px solid var(--border);
   }
   .nav-links.open .nav-lang-item { display: block; }
-  .nav-lang-item button {
-    font-family: var(--sans);
+  .nav-lang-item .lang-toggle {
+    display: inline-flex;
     font-size: 0.85rem;
-    font-weight: 500;
-    color: rgba(240,239,237,0.5);
-    background: none;
-    border: 1px solid var(--border);
-    border-radius: var(--r-xs);
     padding: 0.45rem 1.1rem;
-    cursor: pointer;
-    letter-spacing: 0.08em;
+    color: rgba(240,239,237,0.5);
+    border-color: var(--border);
   }
 
   .problem-grid { grid-template-columns: 1fr; gap: 1rem; }
