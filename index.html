@@ -7,11 +7,16 @@
   <title>FlitzGrip · Skin Repair Bar</title>
   <link rel="canonical" href="https://www.flitzgrip.com/">
 
+  <!-- hreflang: EN/DE served at same URL via JS i18n -->
+  <link rel="alternate" hreflang="en" href="https://www.flitzgrip.com/">
+  <link rel="alternate" hreflang="de" href="https://www.flitzgrip.com/">
+  <link rel="alternate" hreflang="x-default" href="https://www.flitzgrip.com/">
+
   <!-- Open Graph -->
   <meta property="og:type"        content="website">
   <meta property="og:url"         content="https://www.flitzgrip.com/">
   <meta property="og:title"       content="FlitzGrip · Skin Repair Bar">
-  <meta property="og:description" content="Natural hand care for climbers, sailors, rowers and gymnasts. 100% organic ingredients. Handcrafted in Berlin.">
+  <meta property="og:description" content="Natural hand care for climbers, sailors, rowers and gymnasts. Organic ingredients. Handcrafted in Berlin.">
   <meta property="og:image"       content="https://www.flitzgrip.com/assets/images/product-full.jpeg">
   <meta property="og:image:width"  content="1200">
   <meta property="og:image:height" content="630">
@@ -22,10 +27,10 @@
   <!-- Twitter Card -->
   <meta name="twitter:card"        content="summary_large_image">
   <meta name="twitter:title"       content="FlitzGrip · Skin Repair Bar">
-  <meta name="twitter:description" content="Natural hand care for climbers, sailors, rowers and gymnasts. 100% organic. Handcrafted in Berlin.">
+  <meta name="twitter:description" content="Natural hand care for climbers, sailors, rowers and gymnasts. Organic ingredients. Handcrafted in Berlin.">
   <meta name="twitter:image"       content="https://www.flitzgrip.com/assets/images/product-full.jpeg">
 
-  <!-- JSON-LD: Organization + WebSite -->
+  <!-- JSON-LD: Organization + WebSite + Product -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -41,16 +46,31 @@
       {
         "@type": "WebSite",
         "name": "FlitzGrip",
-        "url": "https://www.flitzgrip.com",
-        "potentialAction": { "@type": "SearchAction", "target": "https://www.flitzgrip.com/?s={search_term_string}", "query-input": "required name=search_term_string" }
+        "url": "https://www.flitzgrip.com"
+      },
+      {
+        "@type": "Product",
+        "name": "FlitzGrip Skin Repair Bar",
+        "description": "Solid natural wax bar for skin repair. Handcrafted in Berlin from organic ingredients. Clip-on container attaches directly to your chalk bag.",
+        "image": "https://www.flitzgrip.com/assets/images/product-full.jpeg",
+        "brand": { "@type": "Brand", "name": "FlitzGrip" },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.flitzgrip.com/#product",
+          "priceCurrency": "EUR",
+          "price": "12.95",
+          "availability": "https://schema.org/InStock",
+          "seller": { "@type": "Organization", "name": "FlitzGo LTX GmbH" }
+        }
       }
     ]
   }
   </script>
 
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/png" href="assets/images/logo.png">
-  <link rel="apple-touch-icon" href="assets/images/logo.png">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
 </head>
 <body>
 
@@ -404,7 +424,7 @@
             <img src="assets/images/logo.png" alt="FlitzGrip">
             <span>FlitzGrip<sup class="tm">™</sup></span>
           </div>
-          <p>Natural skin repair for hands that work hard. Handcrafted in Berlin from 100% organic ingredients.</p>
+          <p>Natural skin repair for hands that work hard. Handcrafted in Berlin from organic ingredients.</p>
           <a href="https://www.instagram.com/flitz.grip" target="_blank" rel="noopener noreferrer" class="ig-link footer-ig">Instagram</a>
         </div>
         <div class="footer-col">
